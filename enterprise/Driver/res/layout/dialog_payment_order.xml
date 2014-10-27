@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/payment_relativeLayout"
+    android:layout_width="750dp"
+    android:layout_height="400dp"
+    android:background="@drawable/rounded_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/agreement_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/payment_lable"
+                style="@style/txt"
+                android:text="信息费总额:"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/payment_money"
+                style="@style/txt"
+                android:textColor="@color/oringe"
+                android:textSize="@dimen/h3" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:id="@+id/payment_mode"
+                style="@style/txt"
+                android:text="选择支付方式：" />
+
+            <RadioGroup
+                android:id="@+id/paymentRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/offlinePaymentRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radiobutton_check_btn_bg"
+                    android:paddingLeft="10dp"
+                    android:text="线下支付"
+                    android:textColor="@color/oringe_black_text_color" />
+
+                <RadioButton
+                    android:id="@+id/onlinePaymentRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/radiobutton_check_btn_bg"
+                    android:paddingLeft="10dp"
+                    android:text="线上支付"
+                    android:textColor="@color/oringe_black_text_color"
+                    android:visibility="invisible" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/online_payment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/up_arrow"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:text="网银支付"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:id="@+id/bank_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp" >
+
+                <RadioButton
+                    android:id="@+id/ccb_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ccb_radiobutton_bg"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/cmbc_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/cmbc_radiobutton_bg"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/agricultural_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/agricultural_radiobutton_bg"
+                    android:button="@null" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/up_arrow"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:text="支付宝支付"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/alipay_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/alipay_radiobutton_bg"
+                android:button="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/payment_btn"
+            style="@style/operateButton"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/publish_dialog_ok_btn_selector" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/operateButton"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/publish_dialog_cancel_btn_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

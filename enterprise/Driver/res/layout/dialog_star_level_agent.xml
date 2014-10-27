@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="328dp"
+    android:layout_height="310dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="328dp"
+        android:layout_height="310dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/star_level_bg"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="40dp" >
+
+        <TextView
+            android:id="@+id/title_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/star_level_title"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_service"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/star_img"
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:background="@drawable/creditrating_star5"
+                android:contentDescription="@string/image_description" />
+
+            <TextView
+                android:id="@+id/star_level_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/star_level_score"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/h3"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/goods_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score"
+            android:layout_marginTop="20dp"
+            android:text="@string/star_level_goodsdiscription_score"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/service_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_description"
+            android:layout_marginTop="10dp"
+            android:text="@string/star_level_service_score"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/deal_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_score"
+            android:layout_marginTop="10dp"
+            android:text="@string/star_level_deal_num"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/close_btn"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/delete_bt"
+        android:contentDescription="@string/image_description" />
+
+</RelativeLayout>

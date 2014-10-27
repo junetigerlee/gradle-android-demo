@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="470dp"
+    android:layout_height="200dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="420dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/prompt_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/success_logo"
+            android:contentDescription="@string/image_description" />
+
+        <TextView
+            android:id="@+id/prompt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="发布成功！发布成功！发布成功！发布成功！发布成功！发布成功！发布成功！发布成功！发布成功！发布成功！发布成功！"
+            android:textColor="@color/grade_text_color"
+            android:textSize="@dimen/title_size" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/close_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="-24dp"
+        android:layout_toRightOf="@id/layout"
+        android:background="@drawable/close_btn"
+        android:contentDescription="@string/image_description" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtn_goods_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:padding="10dp"
+            android:text="@string/grabgoods_has_available_all"
+            android:textColor="@color/month_text_color"
+            android:textSize="@dimen/h3" />
+
+        <RadioButton
+            android:id="@+id/rbtn_goods_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:button="@null"
+            android:padding="10dp"
+            android:text="@string/grabgoods_has_available_success"
+            android:textColor="@color/month_text_color"
+            android:textSize="@dimen/h3" />
+
+        <RadioButton
+            android:id="@+id/rbtn_goods_failure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:button="@null"
+            android:padding="10dp"
+            android:text="@string/grabgoods_has_available_failure"
+            android:textColor="@color/month_text_color"
+            android:textSize="@dimen/h3" />
+
+        <RadioButton
+            android:id="@+id/rbtn_goods_audit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:button="@null"
+            android:padding="10dp"
+            android:text="@string/grabgoods_has_available_audit"
+            android:textColor="@color/month_text_color"
+            android:textSize="@dimen/h3" />
+    </RadioGroup>
+
+    <cn.com.incito.wisdom.uicomp.widget.refreshable.RefreshableListView
+        android:id="@+id/listView"
+        style="@style/listview_default_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="10dp"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        ptr:ptrDrawable="@drawable/default_ptr_rotate"
+        ptr:ptrHeaderTextColor="@color/white"
+        ptr:ptrShowIndicator="false" />
+
+</LinearLayout>

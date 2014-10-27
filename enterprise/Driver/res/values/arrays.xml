@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="deliverSpeed_desc">
+        <item>发货速度非常慢，完全不能接受</item>
+        <item>发货速度非常一般</item>
+        <item>发货速度中等，勉强可以接受</item>
+        <item>发货速度比较快，客户比较满意</item>
+        <item>发货速度非常快，给个好评</item>
+    </string-array>
+    <string-array name="service_desc">
+        <item>司机服务态度非常的差，完全不能接受</item>
+        <item>司机服务态度非常一般</item>
+        <item>司机服务态度中等，勉强可以接受</item>
+        <item>司机服务态度良好，客户比较满意</item>
+        <item>司机服务态度非常的好，给个好评</item>
+    </string-array>
+    <string-array name="deliverDate_desc">
+        <item>交付日期延迟严重，用户完全不能接受</item>
+        <item>交付日期延迟，客户基本不能接受</item>
+        <item>交付日期勉强可以接受</item>
+        <item>交付日期比较准时，客户比较满意</item>
+        <item>交付日期非常准时，给个好评</item>
+    </string-array>
+    <string-array name="deliverQuality_desc">
+        <item>交付质量非常差</item>
+        <item>交付质量非客户很不愿意</item>
+        <item>交付质量还需改进，但基本可以理解</item>
+        <item>交付质量良好，用户比较满意</item>
+        <item>交付质量很满意，很赞</item>
+    </string-array>
+    <string-array name="goodsSource_desc">
+        <item>货源描述完全不相符，完全不能接受</item>
+        <item>货源描述真实度不太准确</item>
+        <item>货源描述真实度属中等，勉强可以接受</item>
+        <item>货源描述与实际比较相符，客户比较满意</item>
+        <item>货源描述信息非常准确，给个好评</item>
+    </string-array>
+    <string-array name="agentService_desc">
+        <item>货代服务态度非常的差，完全不能接受</item>
+        <item>货代服务态度非常一般</item>
+        <item>货代服务态度中等，勉强可以接受</item>
+        <item>货代服务态度良好，客户比较满意</item>
+        <item>货代服务态度非常的好，给个好评</item>
+    </string-array>
+
+</resources>

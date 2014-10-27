@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="pink">#ffb3144e</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="white">#ffffffff</color>
+    <color name="blue">#ff004eff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0101</color>
+    <color name="grey">#ff58616d</color>
+    <color name="transparent">#00000000</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="hightransparent">#40000000</color>
+    <color name="app_background_color">#FFefefef</color>
+    <color name="progress_bg">#00ffffff</color>
+    <color name="primary_text_color">#ff666666</color>
+    <color name="secondary_text_color">#ff999999</color>
+    <color name="player_text_color">@color/primary_text_color</color>
+    <color name="player_fun_text_color">#ff500c8f</color>
+    <color name="player_song_info_text_color">#ff777777</color>
+    <color name="share_editor_text_color">#ff5c5c5c</color>
+    <color name="welcome_btn_text_color">#ffd0b76c</color>
+    <color name="unknow_singer_color">@color/primary_text_color</color>
+    <color name="singer_myself_color">#ff2b752b</color>
+    <color name="super_user_color">#ff9f7f00</color>
+    <color name="shadow_color">#4c000000</color>
+    <color name="grade_text_color">@color/primary_text_color</color>
+    <color name="lyric_highlight_color">#ffe88c06</color>
+    <color name="text_color_normal">@color/primary_text_color</color>
+    <color name="chat_text_color">@color/black</color>
+    <color name="text_color_light">@color/secondary_text_color</color>
+    <color name="profile_text_link">#ff408ccd</color>
+    <color name="profile_text_gift">#ff9f7f00</color>
+    <color name="gift_statu_send">#ffd50303</color>
+    <color name="gift_statu_received">#ff2b752b</color>
+    <color name="gift_statu_reject">@color/secondary_text_color</color>
+    <color name="order_detail_sender_name">#ff408ccd</color>
+    <color name="oringe">#FF5500</color>
+    <color name="font_oringe">#ffe3a232</color>
+    <color name="light_blue_bg">#c9e4ed</color>
+
+    <integer-array name="gift_statu_colors">
+        <item>@color/gift_statu_send</item>
+        <item>@color/gift_statu_send</item>
+        <item>@color/gift_statu_reject</item>
+        <item>@color/gift_statu_received</item>
+        <item>@color/gift_statu_reject</item>
+    </integer-array>
+
+    <color name="menu_item_bg_color">#ff404040</color>
+    <color name="menu_item_divider_color">#ff666666</color>
+    <color name="menu_item_selected_color">#ffc8205d</color>
+    <color name="board_list_item_bg1">#EE1E1E1E</color>
+    <color name="board_list_item_bg2">#BB2F2F2F</color>
+
+</resources>

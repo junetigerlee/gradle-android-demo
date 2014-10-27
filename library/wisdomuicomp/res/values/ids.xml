@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="sliding_menu_selected_view" type="id"/>
+    <item name="refreshable_widget_gridview" type="id"/>
+    <item name="refreshable_widget_webview" type="id"/>
+    <item name="refreshable_widget_scrollview" type="id"/>
+    <item name="expandable_toggle_button" type="id"/>
+    <item name="expandable" type="id"/>
+    <item name="expandable_icon" type="id"/>
+    <item name="expandable_icon_expand" type="id"/>
+    <item name="expandable_icon_collapse" type="id"/>
+
+</resources>

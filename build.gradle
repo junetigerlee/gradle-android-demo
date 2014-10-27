@@ -1,0 +1,30 @@
+buildscript {
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.9.+'
+    }
+}
+
+
+apply plugin: 'android-reporting'
+
+
+allprojects {
+    version = VERSION_NAME
+    group = GROUP
+
+    repositories {
+        mavenCentral()
+		maven {
+			url "http://192.168.11.112/nexus/content/groups/public"
+		}
+    }
+	tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+}
+

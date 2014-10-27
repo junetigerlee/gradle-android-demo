@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_height="wrap_content"
+   android:layout_width="fill_parent"
+   android:orientation="vertical"
+   android:background="@drawable/layout_bg"
+   android:paddingLeft="12dp"
+   android:paddingRight="12dp"
+   android:paddingTop="4dp">
+
+   <LinearLayout
+      android:layout_height="wrap_content"
+      android:layout_width="fill_parent"
+      android:layout_gravity="center_horizontal"
+      android:orientation="horizontal">
+
+      <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_gravity="center_horizontal"
+         android:layout_weight="1"
+         android:orientation="vertical">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="省" />
+         <wisdomcity.uicomp.widget.wheelview.WheelViewCity
+            android:id="@+id/province"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_vertical" />
+      </LinearLayout>
+
+      <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_gravity="center_horizontal"
+         android:layout_weight="1"
+         android:orientation="vertical">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="市" />
+         
+         <wisdomcity.uicomp.widget.wheelview.WheelViewCity
+            android:id="@+id/city"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent" />
+      </LinearLayout>
+
+      <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_gravity="center_horizontal"
+         android:layout_weight="1"
+         android:orientation="vertical">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="县" />
+         <wisdomcity.uicomp.widget.wheelview.WheelViewCity
+            android:id="@+id/country"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent" />
+      </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

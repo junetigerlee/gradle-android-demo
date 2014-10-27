@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/left_search_expand_bg"
+    android:paddingBottom="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:verticalSpacing="2dp" >
+    </GridView>
+
+    <!--
+   <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <Button
+         android:id="@+id/usual_place1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/left_search_button"
+         android:textColor="@color/boardgoods_btntext_color"
+         android:textSize="15sp"
+         android:layout_weight="1"
+         android:text="全国" />
+      <Button
+         android:id="@+id/usual_place2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/left_search_button"
+         android:textColor="@color/boardgoods_btntext_color"
+         android:textSize="15sp"
+         android:layout_weight="1"
+         android:text="上海" />
+      <Button
+         android:id="@+id/usual_place3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/left_search_button"
+         android:textColor="@color/boardgoods_btntext_color"
+         android:textSize="15sp"
+         android:layout_weight="1"
+         android:text="深圳" />
+   </TableRow>
+
+   <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <Button
+         android:id="@+id/usual_place4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/left_search_button"
+         android:textColor="@color/boardgoods_btntext_color"
+         android:textSize="15sp"
+         android:layout_weight="1"
+         android:text="宜昌" />
+      <Button
+         android:id="@+id/usual_place5"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/left_search_button"
+         android:textColor="@color/boardgoods_btntext_color"
+         android:textSize="15sp"
+         android:layout_weight="1"
+         android:text="十堰" />
+      <Button
+         android:id="@+id/usual_place6"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/left_search_button"
+         android:textColor="@color/boardgoods_btntext_color"
+         android:textSize="15sp"
+         android:layout_weight="1"
+         android:text="南阳" />
+   </TableRow>
+
+   <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <Button
+         android:id="@+id/usual_place7"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/left_search_button"
+         android:textColor="@color/boardgoods_btntext_color"
+         android:textSize="15sp"
+         android:layout_weight="1"
+         android:text="洛阳" />
+      <Button
+         android:id="@+id/usual_place8"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/left_search_button"
+         android:textColor="@color/boardgoods_btntext_color"
+         android:textSize="15sp"
+         android:layout_weight="1"
+         android:text="郑州" />
+      <Button
+         android:id="@+id/usual_place9"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/left_search_button"
+         android:textColor="@color/boardgoods_btntext_color"
+         android:textSize="15sp"
+         android:layout_weight="1"
+         android:text="更多..." />
+   </TableRow>
+    -->
+
+</RelativeLayout>

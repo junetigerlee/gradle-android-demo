@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/menu_publish_p" android:state_focused="true"/>
+    <item android:drawable="@drawable/menu_publish_p" android:state_checked="true"/>
+    <item android:drawable="@drawable/menu_publish_n"/>
+
+</selector>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/receivables_relativeLayout"
+    android:layout_width="650dp"
+    android:layout_height="500dp"
+    android:background="@drawable/confirm_receive_dialog_bg"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="订单信息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/h1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/orderno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="订单编号：DA00232"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="货物名称：汽车配件"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="重         量：3吨"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="件         数：23件"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/shipper_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="发货人    ：张大"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+
+                <TextView
+                    android:id="@+id/shipper_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="联系方式：1231231232"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+
+                <TextView
+                    android:id="@+id/shipper_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxEms="14"
+                    android:singleLine="true"
+                    android:text="公         司：瓦大厦的发的发"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+
+                <TextView
+                    android:id="@+id/shipper_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxEms="14"
+                    android:singleLine="true"
+                    android:text="地         址：长虹路23号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/consigne_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="收货人    ：张二"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+
+                <TextView
+                    android:id="@+id/consigne_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="联系方式：1231231232"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+
+                <TextView
+                    android:id="@+id/consigne_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxEms="14"
+                    android:singleLine="true"
+                    android:text="公         司：瓦大厦的发的发"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+
+                <TextView
+                    android:id="@+id/consigne_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxEms="14"
+                    android:singleLine="true"
+                    android:text="地         址：长虹路23号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/h3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical" >
+
+            <ViewStub
+                android:id="@+id/order_sign_viewstub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout="@layout/dialog_order_sign_viewstub" />
+
+            <ViewStub
+                android:id="@+id/order_refuse_sign_viewstub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout="@layout/dialog_order_refuse_sign_viewstub" />
+
+            <LinearLayout
+                android:id="@+id/operate_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/sign_btn"
+                    style="@style/operateButton"
+                    android:background="@drawable/orders_sign_btn_selector" />
+
+                <Button
+                    android:id="@+id/refuse_btn"
+                    style="@style/operateButton"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/orders_dialog_refuse_btn_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

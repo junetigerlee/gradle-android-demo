@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout"
+    android:layout_width="820dp"
+    android:layout_height="450dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_bg"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="40dp" >
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="820dp"
+            android:layout_height="450dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/driver_evaluate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/driver_evaluate_title"
+                        style="@style/txt_title"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:text="请给货代评价"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/h3" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/description_txt"
+                            style="@style/txt"
+                            android:layout_alignParentTop="true"
+                            android:text="货源描述相符："
+                            android:textColor="@color/grade_text_color" />
+
+                        <RatingBar
+                            android:id="@+id/description_ratingBar"
+                            style="@style/roomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/description_txt"
+                            android:rating="5" />
+
+                        <TextView
+                            android:id="@+id/description_grade"
+                            style="@style/txt"
+                            android:layout_alignBottom="@+id/description_ratingBar"
+                            android:layout_toRightOf="@+id/description_ratingBar"
+                            android:text="5.0分"
+                            android:textColor="@color/grade_text_color" />
+
+                        <TextView
+                            android:id="@+id/goodsource_desc"
+                            style="@style/txt"
+                            android:layout_width="match_parent"
+                            android:layout_alignLeft="@+id/description_ratingBar"
+                            android:layout_alignRight="@+id/description_ratingBar"
+                            android:layout_below="@+id/description_ratingBar"
+                            android:layout_toRightOf="@+id/description_grade"
+                            android:gravity="left"
+                            android:maxLines="2"
+                            android:minLines="2"
+                            android:singleLine="false"
+                            android:text="货源描述信息非常准确，给个好评"
+                            android:textColor="@color/grade_text_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/service_txt"
+                            style="@style/txt"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:text="货代服务质量："
+                            android:textColor="@color/grade_text_color" />
+
+                        <RatingBar
+                            android:id="@+id/service_ratingBar"
+                            style="@style/roomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/service_txt"
+                            android:rating="5" />
+
+                        <TextView
+                            android:id="@+id/service_grade"
+                            style="@style/txt"
+                            android:layout_alignBottom="@+id/service_ratingBar"
+                            android:layout_toRightOf="@+id/service_ratingBar"
+                            android:text="5.0分"
+                            android:textColor="@color/grade_text_color" />
+
+                        <TextView
+                            android:id="@+id/agent_service_desc"
+                            style="@style/txt"
+                            android:layout_width="match_parent"
+                            android:layout_alignLeft="@+id/service_ratingBar"
+                            android:layout_alignRight="@+id/service_ratingBar"
+                            android:layout_below="@+id/service_ratingBar"
+                            android:gravity="left"
+                            android:maxLines="2"
+                            android:minLines="2"
+                            android:singleLine="false"
+                            android:text="货代服务态度非常的好，给个好评"
+                            android:textColor="@color/grade_text_color" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/comment_local_txt"
+                        style="@style/txt"
+                        android:layout_marginTop="20dp"
+                        android:minLines="2"
+                        android:singleLine="false"
+                        android:textSize="@dimen/h5" />
+
+                    <EditText
+                        android:id="@+id/comment_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|top"
+                        android:hint="请输入您对货代公司的评价"
+                        android:maxLength="100"
+                        android:maxLines="3"
+                        android:minLines="3"
+                        android:textSize="@dimen/h5" />
+
+                    <LinearLayout
+                        android:id="@+id/operate_linear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_cancel"
+                            style="@style/operateButton"
+                            android:background="@drawable/orders_dialog_cancel_btn_selector" />
+
+                        <Button
+                            android:id="@+id/btn_comment"
+                            style="@style/operateButton"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/orders_dialog_comment_btn_selector" >
+                        </Button>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divide_line"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/the_other_evaluate_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/agent_evaluate_title"
+                        style="@style/txt_title"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:text="货代给我的评价"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/h3" />
+
+                    <TextView
+                        android:id="@+id/no_evaluate_tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="未评价"
+                        android:textColor="@color/grade_text_color"
+                        android:textSize="@dimen/h1"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/evaluate_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/deliver_txt"
+                                style="@style/txt"
+                                android:text="发货速度："
+                                android:textSize="@dimen/h5" />
+
+                            <RatingBar
+                                android:id="@+id/deliver_speed_ratingBar"
+                                style="@style/roomRatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/deliver_txt"
+                                android:rating="5" >
+                            </RatingBar>
+
+                            <TextView
+                                android:id="@+id/deliver_speed_grade"
+                                style="@style/txt"
+                                android:layout_alignBottom="@+id/deliver_speed_ratingBar"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/deliver_speed_ratingBar"
+                                android:text="5.0分"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/deliver_desc"
+                                style="@style/txt"
+                                android:layout_width="wrap_content"
+                                android:layout_alignLeft="@+id/deliver_speed_ratingBar"
+                                android:layout_alignRight="@+id/deliver_speed_ratingBar"
+                                android:layout_below="@+id/deliver_speed_ratingBar"
+                                android:gravity="left"
+                                android:maxLines="2"
+                                android:minLines="2"
+                                android:singleLine="false"
+                                android:text="发货速度非常快，给个好评"
+                                android:textSize="@dimen/h5" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/service_manner_txt"
+                                style="@style/txt"
+                                android:text="服务态度："
+                                android:textSize="@dimen/h5" />
+
+                            <RatingBar
+                                android:id="@+id/service_manner_ratingBar"
+                                style="@style/roomRatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/service_manner_txt"
+                                android:rating="5" />
+
+                            <TextView
+                                android:id="@+id/service_manner_grade"
+                                style="@style/txt"
+                                android:layout_alignBottom="@+id/service_manner_ratingBar"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/service_manner_ratingBar"
+                                android:text="5.0分"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/service_desc"
+                                style="@style/txt"
+                                android:layout_width="200dp"
+                                android:layout_alignLeft="@+id/service_manner_ratingBar"
+                                android:layout_alignRight="@+id/service_manner_ratingBar"
+                                android:layout_below="@+id/service_manner_ratingBar"
+                                android:gravity="left"
+                                android:maxLines="2"
+                                android:minLines="2"
+                                android:singleLine="false"
+                                android:text="司机服务态度非常的好，给个好评"
+                                android:textSize="@dimen/h5" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/release_date_txt"
+                                style="@style/txt"
+                                android:text="交付日期："
+                                android:textSize="@dimen/h5" />
+
+                            <RatingBar
+                                android:id="@+id/release_date_ratingBar"
+                                style="@style/roomRatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/release_date_txt"
+                                android:rating="5" />
+
+                            <TextView
+                                android:id="@+id/release_date_grade"
+                                style="@style/txt"
+                                android:layout_alignBottom="@+id/release_date_ratingBar"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/release_date_ratingBar"
+                                android:text="5.0分"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/deliver_date_desc"
+                                style="@style/txt"
+                                android:layout_width="wrap_content"
+                                android:layout_alignLeft="@+id/release_date_ratingBar"
+                                android:layout_alignRight="@+id/release_date_ratingBar"
+                                android:layout_below="@+id/release_date_ratingBar"
+                                android:gravity="left"
+                                android:maxLines="2"
+                                android:minLines="2"
+                                android:singleLine="false"
+                                android:text="交付日期非常准时，给个好评"
+                                android:textSize="@dimen/h5" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/release_quality_txt"
+                                style="@style/txt"
+                                android:text="交付质量："
+                                android:textSize="@dimen/h5" />
+
+                            <RatingBar
+                                android:id="@+id/release_quality_ratingBar"
+                                style="@style/roomRatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/release_quality_txt"
+                                android:rating="5" />
+
+                            <TextView
+                                android:id="@+id/release_quality_grade"
+                                style="@style/txt"
+                                android:layout_alignBottom="@id/release_quality_ratingBar"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@id/release_quality_ratingBar"
+                                android:text="5.0分"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/deliver_quality_desc"
+                                style="@style/txt"
+                                android:layout_width="match_parent"
+                                android:layout_alignLeft="@id/release_quality_ratingBar"
+                                android:layout_alignRight="@id/release_quality_ratingBar"
+                                android:layout_below="@id/release_quality_ratingBar"
+                                android:gravity="left"
+                                android:maxLines="2"
+                                android:minLines="2"
+                                android:singleLine="false"
+                                android:text="交付质量很满意，很赞"
+                                android:textSize="@dimen/h5" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/comment_remote_txt"
+                            style="@style/txt"
+                            android:minLines="2"
+                            android:singleLine="false"
+                            android:text="评价内容："
+                            android:textSize="@dimen/h5" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/close_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/close_btn"
+        android:contentDescription="@string/image_description" />
+
+</RelativeLayout>

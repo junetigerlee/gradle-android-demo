@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/resufe_order_dailog_bg" >
+
+    <LinearLayout
+        android:id="@+id/llyt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_confirm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/myorders_resufe_order_dialog_title"
+            android:textColor="#8f8f8f"
+            android:textSize="@dimen/h3" />
+    </LinearLayout>
+
+    <cn.com.incito.wisdom.uicomp.widget.radiogroup.CustomerRadioGroup
+        android:id="@+id/rgb_refuse_order_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llyt_title"
+        android:layout_margin="30dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbtn_order_reason_maintenance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radiobutton_blue_check_btn_bg"
+                android:paddingLeft="10dp"
+                android:text="@string/myorders_resufe_order_reason_maintenance"
+                android:textColor="#a0a0a0" />
+
+            <RadioButton
+                android:id="@+id/rbtn_order_reason_sick"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radiobutton_blue_check_btn_bg"
+                android:paddingLeft="10dp"
+                android:text="@string/myorders_resufe_order_reason_sick"
+                android:textColor="#a0a0a0" />
+
+            <RadioButton
+                android:id="@+id/rbtn_order_reason_unreasonable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radiobutton_blue_check_btn_bg"
+                android:paddingLeft="10dp"
+                android:text="@string/myorders_resufe_order_reason_unreasonable"
+                android:textColor="#a0a0a0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbtn_order_reason_unfamiliar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radiobutton_blue_check_btn_bg"
+                android:paddingLeft="10dp"
+                android:text="@string/myorders_resufe_order_reason_unfamiliar"
+                android:textColor="#a0a0a0" />
+
+            <RadioButton
+                android:id="@+id/rbtn_order_reason_other"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:button="@drawable/radiobutton_blue_check_btn_bg"
+                android:paddingLeft="10dp"
+                android:text="@string/myorders_resufe_order_reason_other"
+                android:textColor="#a0a0a0" />
+        </LinearLayout>
+    </cn.com.incito.wisdom.uicomp.widget.radiogroup.CustomerRadioGroup>
+
+    <LinearLayout
+        android:id="@+id/llyt_other_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgb_refuse_order_reason"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_other_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/myorders_resufe_order_reason_other_hint"
+            android:maxLength="20"
+            android:textColor="#a0a0a0"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/refuse_operate_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llyt_other_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_yes"
+            style="@style/operateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/publish_dialog_ok_btn_selector" />
+
+        <Button
+            android:id="@+id/btn_no"
+            style="@style/operateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/publish_cancel_btn_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetBottom="1.0px"
+    android:insetTop="1.0px" >
+
+    <selector>
+        <item android:state_pressed="true">
+            <shape android:shape="rectangle" >
+                <stroke
+                    android:width="1.0px"
+                    android:color="@color/black" />
+
+                <solid android:color="@color/black" />
+
+                <corners
+                    android:bottomLeftRadius="25dp"
+                    android:bottomRightRadius="25dp"
+                    android:topLeftRadius="25dp"
+                    android:topRightRadius="25dp" />
+            </shape>
+        </item>
+        <item android:state_focused="true">
+            <shape android:shape="rectangle" >
+                <stroke
+                    android:width="1.0px"
+                    android:color="@color/black" />
+
+                <solid android:color="@color/black" />
+
+                <corners
+                    android:bottomLeftRadius="25dp"
+                    android:bottomRightRadius="25dp"
+                    android:topLeftRadius="25dp"
+                    android:topRightRadius="25dp" />
+            </shape>
+        </item>
+        <item android:state_selected="true">
+            <shape android:shape="rectangle" >
+                <stroke
+                    android:width="1.0px"
+                    android:color="@color/black" />
+
+                <solid android:color="@color/black" />
+
+                <corners
+                    android:bottomLeftRadius="25dp"
+                    android:bottomRightRadius="25dp"
+                    android:topLeftRadius="25dp"
+                    android:topRightRadius="25dp" />
+            </shape>
+        </item>
+        <item>
+            <shape android:shape="rectangle" >
+                <stroke
+                    android:width="1.0px"
+                    android:color="@color/black" />
+
+                <solid android:color="@color/black" />
+
+                <corners
+                    android:bottomLeftRadius="25dp"
+                    android:bottomRightRadius="25dp"
+                    android:topLeftRadius="25dp"
+                    android:topRightRadius="25dp" />
+            </shape>
+        </item>
+    </selector>
+
+</inset>

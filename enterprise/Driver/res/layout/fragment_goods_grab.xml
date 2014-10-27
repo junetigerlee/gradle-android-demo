@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_orders_top_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/grabgoods_goods_manage"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/h2" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/grab_back_icon"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/h3" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/left_radio_group_bg"
+            android:orientation="vertical" >
+
+            <cn.com.incito.wisdom.uicomp.widget.radiogroup.CustomRadioGroup
+                android:id="@+id/crg_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/divide_line" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rbtn_available"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/left_radiobutton_bg"
+                        android:button="@null"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/grabgoods_goods_available"
+                        android:textColor="@color/left_radiobutton_text_color"
+                        android:textSize="@dimen/h3" />
+
+                    <Button
+                        android:id="@+id/btn_available_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/total"
+                        android:text="0"
+                        android:textColor="@color/oringe" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/divide_line" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rbtn_has_available"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/left_radiobutton_bg"
+                        android:button="@null"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/grabgoods_goods_grabed"
+                        android:textColor="@color/left_radiobutton_text_color"
+                        android:textSize="@dimen/h3" />
+
+                    <Button
+                        android:id="@+id/btn_has_available_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/total"
+                        android:text="0"
+                        android:textColor="@color/oringe" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/divide_line" />
+            </cn.com.incito.wisdom.uicomp.widget.radiogroup.CustomRadioGroup>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/my_order_list_bg"
+            android:orientation="vertical" >
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

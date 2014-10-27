@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    tools:context=".DriverMainActivity" >
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menus_radiogroup" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@id/menus_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/menu_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tab_personal_center_selector"
+            android:button="@null"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/menu_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tab_publish_selector"
+            android:button="@null"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/tab_divider"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/menu_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/tab_center_selector"
+            android:button="@null" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/tab_divider"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/menu_my_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tab_order_selector"
+            android:button="@null"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/tab_divider"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/menu_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tab_nav_selector"
+            android:button="@null"
+            android:visibility="invisible" />
+        <!-- <RadioButton -->
+        <!-- android:id="@+id/menu_navigation" -->
+        <!-- android:layout_width="0dp" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:button="@null" -->
+        <!-- android:drawableTop="@drawable/menu_rim_bg" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="全屏导航" -->
+
+
+        <!-- <RadioButton -->
+        <!-- android:id="@+id/menu_games" -->
+        <!-- android:layout_width="0dp" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:button="@null" -->
+        <!-- android:drawableTop="@drawable/menu_games_bg" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="娱乐" -->
+        <!-- android:textSize="@dimen/h3" /> -->
+    </RadioGroup>
+
+<!--     <Button -->
+<!--         android:id="@+id/test" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentBottom="true" /> -->
+
+</RelativeLayout>

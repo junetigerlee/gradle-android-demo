@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/receivables_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:text="拒签理由"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h1" />
+
+        <cn.com.incito.wisdom.uicomp.widget.radiogroup.CustomRadioGroup
+            android:id="@+id/refuse_info_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/refuse_operate_layout"
+            android:layout_below="@id/textView1"
+            android:layout_margin="30dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/goods_break"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="货物破损"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/goods_lose"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="货物丢失"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/goods_return"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="退换货"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/goods_delay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="延误送货"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/goods_chaos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="货物混包"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="其他"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/other_info_edittext"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:maxLength="20" />
+            </LinearLayout>
+        </cn.com.incito.wisdom.uicomp.widget.radiogroup.CustomRadioGroup>
+
+        <LinearLayout
+            android:id="@+id/refuse_operate_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/refuselayout_cancel_btn"
+                style="@style/operateButton"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/publish_cancel_btn_selector" />
+
+            <Button
+                android:id="@+id/refuselayout_confirm_btn"
+                style="@style/operateButton"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/publish_dialog_ok_btn_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
