@@ -1,1 +1,1 @@
-include ':library:wisdomsdk',':library:wisdomuicomp',':enterprise:Driver'
+include ':library:wisdomsdk',':library:wisdomuicomp',':enterprise:Driver',':enterprise:Driver:DaoExampleGenerator'
